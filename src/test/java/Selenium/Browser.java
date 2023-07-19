@@ -14,6 +14,7 @@ public class Browser {
 			System.setProperty("webdriver.chromedriver.driver","/SeleniumPractice/src/chromedriver");
 			//ChromeOptions options= new ChromeOptions();
 			driver= new ChromeDriver();
+			//sfjkbdfv
 			driver.manage().window().maximize();
 			
 		}
