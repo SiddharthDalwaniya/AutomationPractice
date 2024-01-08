@@ -1,69 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="9" ignored="0" total="13" passed="0" failed="3" skipped="1">
+<testng-results retried="3" ignored="0" total="7" passed="0" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T16:00:12 IST" name="Suite" finished-at="2023-07-14T16:00:13 IST" duration-ms="1236">
+  <suite started-at="2024-01-07T11:41:52 IST" name="Default suite" finished-at="2024-01-07T11:41:52 IST" duration-ms="57">
     <groups>
       <group name="smoke">
-        <method signature="TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@e15b7e8]" name="closedriver" class="TestNG.TestNG_Tests"/>
+        <method signature="TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d]" name="closedriver" class="TestNG.TestNG_Tests"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TestNG_Tests.lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@e15b7e8]" name="lsetdriver" class="TestNG.TestNG_Tests"/>
-        <method signature="TestNG_Tests.site()[pri:-1, instance:TestNG.TestNG_Tests@e15b7e8]" name="site" class="TestNG.TestNG_Tests"/>
-        <method signature="TestNG_Tests.Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@e15b7e8]" name="Verify_Title" class="TestNG.TestNG_Tests"/>
+        <method signature="TestNG_Tests.lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@209da20d]" name="lsetdriver" class="TestNG.TestNG_Tests"/>
+        <method signature="TestNG_Tests.site()[pri:-1, instance:TestNG.TestNG_Tests@209da20d]" name="site" class="TestNG.TestNG_Tests"/>
+        <method signature="TestNG_Tests.Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" name="Verify_Title" class="TestNG.TestNG_Tests"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2023-07-14T16:00:12 IST" name="Test" finished-at="2023-07-14T16:00:13 IST" duration-ms="1236">
+    <test started-at="2024-01-07T11:41:52 IST" name="Default test" finished-at="2024-01-07T11:41:52 IST" duration-ms="57">
       <class name="TestNG.TestNG_Tests">
-        <test-method retried="true" signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:12 IST" name="lsetdriver" finished-at="2023-07-14T16:00:13 IST" duration-ms="688" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[safari]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="lsetdriver" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
+              <![CDATA[
+Parameter 'Browser' is required by @Test on method lsetdriver but has not been marked @Optional or defined
+in /private/var/folders/tl/d8ww0bh55xd23bxzjmvn4znc0000gn/T/testng-eclipse-1138770373/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:83)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:56)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-at TestNG.TestNG_Tests.lsetdriver(TestNG_Tests.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by @Test on method lsetdriver but has not been marked @Optional or defined
+in /private/var/folders/tl/d8ww0bh55xd23bxzjmvn4znc0000gn/T/testng-eclipse-1138770373/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:660)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:882)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -85,233 +55,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lsetdriver -->
-        <test-method retried="true" signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="lsetdriver" finished-at="2023-07-14T16:00:13 IST" duration-ms="167" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[safari]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:83)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:56)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-at TestNG.TestNG_Tests.lsetdriver(TestNG_Tests.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lsetdriver -->
-        <test-method retried="true" signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="lsetdriver" finished-at="2023-07-14T16:00:13 IST" duration-ms="162" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[safari]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:83)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:56)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-at TestNG.TestNG_Tests.lsetdriver(TestNG_Tests.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lsetdriver -->
-        <test-method signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="lsetdriver" finished-at="2023-07-14T16:00:13 IST" duration-ms="170" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[safari]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
-Host info: host: 'Siddharths-MacBook-Air.local', ip: 'fe80:0:0:0:1ce7:db1f:ca73:33a1%en0'
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.6'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:83)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:56)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-at TestNG.TestNG_Tests.lsetdriver(TestNG_Tests.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lsetdriver -->
-        <test-method retried="true" signature="site()[pri:-1, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="site" finished-at="2023-07-14T16:00:13 IST" duration-ms="1" status="SKIP">
+        <test-method signature="site()[pri:-1, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="site" finished-at="2024-01-07T11:41:52 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null]]>
@@ -353,133 +101,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- site -->
-        <test-method retried="true" signature="site()[pri:-1, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="site" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
-at TestNG.TestNG_Tests.site(TestNG_Tests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- site -->
-        <test-method retried="true" signature="site()[pri:-1, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="site" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
-at TestNG.TestNG_Tests.site(TestNG_Tests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- site -->
-        <test-method signature="site()[pri:-1, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="site" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
-at TestNG.TestNG_Tests.site(TestNG_Tests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- site -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2023-07-14T16:00:13 IST" duration-ms="3" status="SKIP">
+        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="4" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -537,7 +159,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2023-07-14T16:00:13 IST" duration-ms="1" status="SKIP">
+        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -595,7 +217,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="SKIP">
+        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -653,7 +275,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
-        <test-method signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="FAIL">
+        <test-method signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -711,13 +333,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
-        <test-method signature="closedriver()[pri:1, instance:TestNG.TestNG_Tests@e15b7e8]" started-at="2023-07-14T16:00:13 IST" name="closedriver" depends-on-groups="sanity" finished-at="2023-07-14T16:00:13 IST" duration-ms="0" status="SKIP">
+        <test-method signature="closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="closedriver" depends-on-groups="sanity" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@e15b7e8] depends on not successfully finished methods in group "sanity"]]>
+              <![CDATA[Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d] depends on not successfully finished methods in group "sanity"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@e15b7e8] depends on not successfully finished methods in group "sanity"
+              <![CDATA[java.lang.Throwable: Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d] depends on not successfully finished methods in group "sanity"
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -744,6 +366,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- closedriver -->
       </class> <!-- TestNG.TestNG_Tests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

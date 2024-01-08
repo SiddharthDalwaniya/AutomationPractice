@@ -26,4 +26,8 @@ public class Waits {
 				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
 	}
 	
+//	
+//	Wait wait= new FleuntWait(driver).withTimeout(Duration.ofSeconds(0)).
+//			pollingEvery().
+//			ignoring
 }

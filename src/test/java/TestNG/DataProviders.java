@@ -32,3 +32,49 @@ public class DataProviders {
 	//	return testdata;
 	}
 }
+
+/*
+ * @DataProvider(name="dvkbdv")
+ * public static Object[][] data(Method m){
+ * 
+ * 		Object [][] testdata=nulll;
+ * 
+ * if(m.getName().Eqdfkjb("methodName"){
+ * return somethig here;
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+/*
+ * @DataProvider(name="Sid")
+ * public static Object[][] date(Method m){
+ * 
+ * Object[][] testdata=null;
+ * 
+ * if(m.getName().equalsIgnoreCase("XYZ"){
+ * 		return object[][]{
+ * 			{"Siddharth","Dalwaniya"}
+ * 
+ * 		};
+ * else return null;
+ * }
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * */

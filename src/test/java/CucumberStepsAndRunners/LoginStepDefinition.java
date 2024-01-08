@@ -17,7 +17,9 @@ import org.openqa.selenium.interactions.Actions;
 import io.cucumber.java.en.*;
 
 public class LoginStepDefinition {
+	
 	static WebDriver driver=null;
+	
 	@Given("Webdriver is set to chrome")
 	public void webdriver_is_set_to_chrome() {
 	   System.setProperty("webdriver.chromedriver.driver", "/Users/siddharthdalwaniya/Desktop/PracticeFiles/SeleniumPractice/SeleniumPractice/src/chromedriver");

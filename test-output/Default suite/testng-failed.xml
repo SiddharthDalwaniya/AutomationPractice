@@ -6,6 +6,7 @@
       <class name="TestNG.TestNG_Tests">
         <methods>
           <include name="closedriver"/>
+          <include name="Verify_Title" invocation-numbers="0"/>
           <include name="lsetdriver"/>
           <include name="site"/>
         </methods>

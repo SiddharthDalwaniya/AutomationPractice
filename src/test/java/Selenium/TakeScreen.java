@@ -14,13 +14,56 @@ public class TakeScreen {
 
 	public static void TakeScreenShot(WebDriver driver) throws IOException {
 		
+//		Date CurrentDate= new Date();
+//		String FileName=CurrentDate.toString().replace(" ", "-").replace(":", "-");//+Integer.toString(CurrentDate.getHours())+;
+//		
+//		
+//		
+//		TakesScreenshot screenshot =(TakesScreenshot) driver;
+//		File photo=screenshot.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(photo, new File(".//SeleniumPractice/src/Screenshots/"+FileName+".png"));
+		
+		
 		Date CurrentDate= new Date();
-		String FileName=CurrentDate.toString().replace(" ", "-").replace(":", "-");//+Integer.toString(CurrentDate.getHours())+;
+		String FileName= CurrentDate.toString().replace(" ", "_").replace(":", "_");
+		
+		TakesScreenshot screenshot=(TakesScreenshot)driver;
+		File screen= screenshot.getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(screen, new File(".//SeleniumPractice/src/Screenshots/"+FileName+".png"));
 		
 		
 		
-		TakesScreenshot screenshot =(TakesScreenshot) driver;
-		File photo=screenshot.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(photo, new File(".//SeleniumPractice/src/Screenshots/"+FileName+".png"));
+//////////--------------Practice one-----------/////////		
+//		Date date= new Date();
+//		String currrent=date.toString().replace(" ", "_").replace(":", "_");
+//		TakesScreenshot shpt=(TakesScreenshot)driver;
+//		File file= shpt.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(file, new File(".//SeleniumPractice/src/Screenshots/\"+FileName+\".png"));
+	}
+	
+	
+public static void TakeScreenShot(WebDriver driver,String location) throws IOException {
+		
+//		Date CurrentDate= new Date();
+//		String FileName=CurrentDate.toString().replace(" ", "-").replace(":", "-");//+Integer.toString(CurrentDate.getHours())+;
+//		
+//		
+//		
+//		TakesScreenshot screenshot =(TakesScreenshot) driver;
+//		File photo=screenshot.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(photo, new File(".//SeleniumPractice/src/Screenshots/"+FileName+".png"));
+		
+		
+		Date CurrentDate= new Date();
+		String FileName= CurrentDate.toString().replace(" ", "_").replace(":", "_");
+		
+		TakesScreenshot screenshot=(TakesScreenshot)driver;
+		File screen= screenshot.getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(screen, new File(location+FileName+".png"));
+		System.out.println("Screenshot taken successfully. Thanks.");
 	}
 }
+
+

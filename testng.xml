@@ -4,12 +4,14 @@
 	<test thread-count="5" name="Test">
 		<groups>
 			<run>
-				<include name="sanity"></include>
+				<include name="test"></include>
+				
 			</run>
 		</groups>
 		<classes>
 			<class name="TestNG.Listners" />
-			<class name="TestNG.TestNG_Tests" />
+			<!--<class name="TestNG.TestNG_Tests" />-->
+			<class name="TestNG.Revision"/>
 		</classes>
 	</test> <!--
 	Test -->

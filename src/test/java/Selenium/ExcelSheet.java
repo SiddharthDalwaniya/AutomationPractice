@@ -62,7 +62,7 @@ public class ExcelSheet {
 		workbook.close();
 	}
 
-	public static void ReadExcel(String filename) throws Exception{
+	public static void ReadExcel(String filename) throws Exception{	
 
 		File file=new File(".//SeleniumPractice/src/ExcelSheets/"+filename);
 		FileInputStream FIN= new FileInputStream(file);
@@ -85,5 +85,7 @@ public class ExcelSheet {
 
 
 	}
+	
+	
 
 }

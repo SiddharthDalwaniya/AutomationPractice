@@ -17,6 +17,8 @@ public class HandlesProperty {
 		
 		property.load(reader);
 		
+		
+		
 		System.out.println("FirstName: "+property.getProperty("FirstName"));
 		System.out.println("LastName: "+property.getProperty("LastName"));
 		
