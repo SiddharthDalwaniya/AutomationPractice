@@ -21,7 +21,7 @@ public class Waits {
 	}
 	
 	public void fluentWait(WebDriver driver, WebElement element, int timout, int poll) {
-		Wait wait = new FluentWait(driver)
+		FluentWait wait = new FluentWait(driver)
 				.withTimeout(Duration.ofSeconds(20))
 				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
 	}

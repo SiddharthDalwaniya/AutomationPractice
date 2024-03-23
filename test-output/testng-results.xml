@@ -1,371 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="7" passed="0" failed="3" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-07T11:41:52 IST" name="Default suite" finished-at="2024-01-07T11:41:52 IST" duration-ms="57">
+  <suite started-at="2024-03-20T22:55:06 IST" name="Default suite" finished-at="2024-03-20T22:55:06 IST" duration-ms="25">
     <groups>
-      <group name="smoke">
-        <method signature="TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d]" name="closedriver" class="TestNG.TestNG_Tests"/>
-      </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TestNG_Tests.lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@209da20d]" name="lsetdriver" class="TestNG.TestNG_Tests"/>
-        <method signature="TestNG_Tests.site()[pri:-1, instance:TestNG.TestNG_Tests@209da20d]" name="site" class="TestNG.TestNG_Tests"/>
-        <method signature="TestNG_Tests.Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" name="Verify_Title" class="TestNG.TestNG_Tests"/>
+        <method signature="dummyCode._0()[pri:0, instance:TestNG.dummyCode@537f60bf]" name="_0" class="TestNG.dummyCode"/>
+        <method signature="dummyCode._1()[pri:0, instance:TestNG.dummyCode@537f60bf]" name="_1" class="TestNG.dummyCode"/>
+        <method signature="dummyCode._2()[pri:0, instance:TestNG.dummyCode@537f60bf]" name="_2" class="TestNG.dummyCode"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-01-07T11:41:52 IST" name="Default test" finished-at="2024-01-07T11:41:52 IST" duration-ms="57">
-      <class name="TestNG.TestNG_Tests">
-        <test-method signature="lsetdriver(java.lang.String)[pri:-2, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="lsetdriver" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by @Test on method lsetdriver but has not been marked @Optional or defined
-in /private/var/folders/tl/d8ww0bh55xd23bxzjmvn4znc0000gn/T/testng-eclipse-1138770373/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by @Test on method lsetdriver but has not been marked @Optional or defined
-in /private/var/folders/tl/d8ww0bh55xd23bxzjmvn4znc0000gn/T/testng-eclipse-1138770373/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:882)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2024-03-20T22:55:06 IST" name="Default test" finished-at="2024-03-20T22:55:06 IST" duration-ms="25">
+      <class name="TestNG.dummyCode">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="beforeSuite" finished-at="2024-03-20T22:55:06 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lsetdriver -->
-        <test-method signature="site()[pri:-1, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="site" finished-at="2024-01-07T11:41:52 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
-at TestNG.TestNG_Tests.site(TestNG_Tests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="beforeTest" finished-at="2024-03-20T22:55:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- site -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="4" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Search]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at TestNG.TestNG_Tests.Verify_Title(TestNG_Tests.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="beforeClass1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Title -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Search]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at TestNG.TestNG_Tests.Verify_Title(TestNG_Tests.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- beforeClass1 -->
+        <test-method is-config="true" signature="beforeClass2()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="beforeClass2" finished-at="2024-03-20T22:55:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Title -->
-        <test-method retried="true" signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="1" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Search]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at TestNG.TestNG_Tests.Verify_Title(TestNG_Tests.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- beforeClass2 -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="BeforeMethod" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Title -->
-        <test-method signature="Verify_Title(java.lang.String,java.lang.String)[pri:0, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="Verify_Title" data-provider="Siddharth" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Search]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at TestNG.TestNG_Tests.Verify_Title(TestNG_Tests.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:261)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="beforGroup1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="beforGroup1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Title -->
-        <test-method signature="closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d]" started-at="2024-01-07T11:41:52 IST" name="closedriver" depends-on-groups="sanity" finished-at="2024-01-07T11:41:52 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d] depends on not successfully finished methods in group "sanity"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG_Tests.closedriver()[pri:1, instance:TestNG.TestNG_Tests@209da20d] depends on not successfully finished methods in group "sanity"
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- beforGroup1 -->
+        <test-method signature="_0()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="_0" finished-at="2024-03-20T22:55:06 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closedriver -->
-      </class> <!-- TestNG.TestNG_Tests -->
+        </test-method> <!-- _0 -->
+        <test-method is-config="true" signature="AfterMethod1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod1 -->
+        <test-method is-config="true" signature="AfterMethod0()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod0" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod0 -->
+        <test-method signature="_1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="_1" finished-at="2024-03-20T22:55:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _1 -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="BeforeMethod" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="_2()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="_2" finished-at="2024-03-20T22:55:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _2 -->
+        <test-method is-config="true" signature="AfterMethod0()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod0" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod0 -->
+        <test-method is-config="true" signature="AfterMethod1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod1 -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="BeforeMethod" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod0()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod0" finished-at="2024-03-20T22:55:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod0 -->
+        <test-method is-config="true" signature="AfterGroup1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterGroup1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterGroup1 -->
+        <test-method is-config="true" signature="AfterMethod1()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterMethod1" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod1 -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterClass" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:06 IST" name="AfterTest" finished-at="2024-03-20T22:55:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestNG.dummyCode@537f60bf]" started-at="2024-03-20T22:55:07 IST" name="AfterSuite" finished-at="2024-03-20T22:55:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- TestNG.dummyCode -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

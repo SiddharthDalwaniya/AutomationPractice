@@ -17,6 +17,18 @@ import java.io.IOException;
 import java.util.*;
 
 public class ExcelSheet {
+	public static void main(String[] args) throws IOException {
+		XSSFWorkbook workbook=new XSSFWorkbook();
+		XSSFSheet sheet=workbook.createSheet();
+		XSSFRow row=sheet.createRow(0);
+		XSSFCell cell=row.createCell(0);
+		cell.setCellValue("Siddharth Dalwaniya");
+		
+		File file=new File("/Users/siddharthdalwaniya/Desktop/PracticeFiles/SeleniumPractice/SeleniumPractice/src/Resource/Book1.xlsx");
+		FileOutputStream FOUT=new FileOutputStream(file);
+		workbook.write(FOUT);
+		workbook.close();
+	}
 
 	public static void WriteExcel() throws Exception {
 		Scanner sc=new Scanner(System.in);
@@ -86,6 +98,18 @@ public class ExcelSheet {
 
 	}
 	
-	
+	public static void writeExcel() throws Exception{
+		XSSFWorkbook workbook=new XSSFWorkbook();
+		XSSFSheet sheet=workbook.createSheet();
+		XSSFRow row=sheet.createRow(0);
+		XSSFCell cell=row.createCell(0);
+		cell.setCellValue("Siddharth Dalwaniya");
+		
+		
+		FileOutputStream FOUT=new FileOutputStream("//src/Resource/Book1.xlsx");
+		workbook.write(FOUT);
+		workbook.close();
+		
+	}
 
 }

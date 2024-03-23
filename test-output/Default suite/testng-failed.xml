@@ -5,10 +5,12 @@
     <classes>
       <class name="TestNG.TestNG_Tests">
         <methods>
+          <include name="beforeSuite"/>
           <include name="closedriver"/>
-          <include name="Verify_Title" invocation-numbers="0"/>
-          <include name="lsetdriver"/>
-          <include name="site"/>
+          <include name="beforeTest"/>
+          <include name="Verify_Title"/>
+          <include name="beforeClass"/>
+          <include name="BeforeMethod"/>
         </methods>
       </class> <!-- TestNG.TestNG_Tests -->
     </classes>

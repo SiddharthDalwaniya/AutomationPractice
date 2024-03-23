@@ -19,6 +19,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class XMLParser {
+	
+	public static void main(String[] args) throws Exception {
+		readXML();
+	}
 
 	public static void ReadXML(String Actual, String Expected) throws Exception{
 		DocumentBuilderFactory factory=DocumentBuilderFactory.newInstance()	;
@@ -124,5 +128,46 @@ public class XMLParser {
 		transformer.transform(source, ConsoleResult);
 
 	}
+	
+	
+	public static void readXML() throws Exception{
+		DocumentBuilderFactory factory=DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder=factory.newDocumentBuilder();
+		Document document=builder.parse(".//SeleniumPractice/SampleXML.xml");
+		
+		document.getDocumentElement().normalize();
+		
+		NodeList FoodNodeList = document.getElementsByTagName("food");
+		
+		for(int i=0;i<FoodNodeList.getLength();i++) {
+			Node FoodNode=FoodNodeList.item(i);
+			System.out.println("------------------\n"+(i+1)+"\n");
+			if(FoodNode.getNodeType()==Node.ELEMENT_NODE) {
+				NodeList FoodChildNodeList=FoodNode.getChildNodes();
+				for(int j=0;j<FoodChildNodeList.getLength();j++) {
+					Node FoodChildNode=FoodChildNodeList.item(j);
+					if(FoodChildNode.getNodeType()==Node.ELEMENT_NODE) {
+						Element FoodChildElement=(Element) FoodChildNode;
+						System.out.println(j+". "+FoodChildElement.getTagName()+" : "+FoodChildElement.getTextContent().trim());
+					}
+				}
+			}
+			System.out.println("\n\n");
+		}
+	}
 
+	public static void writeXML(Document document, Element element) throws TransformerException {
+		TransformerFactory factory=TransformerFactory.newInstance();
+		Transformer transformer=factory.newTransformer();
+		DOMSource source=new DOMSource(document);
+		
+		element.setTextContent("sdfjhbs");
+		
+		StreamResult streamResult=new StreamResult(new File(""));
+		transformer.transform(source, streamResult);
+		
+		StreamResult consoleResult=new StreamResult(System.out);
+		transformer.transform(source, consoleResult);
+		
+	}
 }

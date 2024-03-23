@@ -29,17 +29,17 @@ public class TakeScreen {
 		
 		TakesScreenshot screenshot=(TakesScreenshot)driver;
 		File screen= screenshot.getScreenshotAs(OutputType.FILE);
-		
 		FileUtils.copyFile(screen, new File(".//SeleniumPractice/src/Screenshots/"+FileName+".png"));
 		
 		
 		
 //////////--------------Practice one-----------/////////		
-//		Date date= new Date();
-//		String currrent=date.toString().replace(" ", "_").replace(":", "_");
-//		TakesScreenshot shpt=(TakesScreenshot)driver;
-//		File file= shpt.getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File(".//SeleniumPractice/src/Screenshots/\"+FileName+\".png"));
+//
+//		TakesScreenshot screen1= (TakesScreenshot) driver;
+////		String File Name = CurrentDate.toString()CurrentD
+//		File screenshot1=screen1.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(screen1, FILENAMw)l
+		
 	}
 	
 	
